@@ -1,0 +1,63 @@
+﻿<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+<script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+<script src="js/api.js"></script>
+<script type="importmap">
+    {
+      "imports": {
+        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+      }
+    }
+</script>
+<div id="app">
+    <a href="#/">/Index</a>&nbsp;
+    <ul>
+        <li><a href="#/materials">Materials</a>&nbsp;</li>
+        <li><a href="#/material">Create material</a>&nbsp;</li>
+    </ul>
+    <ul>
+        <li><a href="#/tasks">Tasks</a>&nbsp;</li>
+        <li><a href="#/task">Create task</a>&nbsp;</li>
+    </ul>
+    <ul>
+    <component :is="currentComponent" />
+    </ul>
+</div>
+
+<script type="module">
+
+    import { createApp } from 'vue'
+
+    import Materials from './app/material/materials.vue.js'
+    import Material from './app/material/material.vue.js'
+
+    import Tasks from './app/task/tasks.vue.js'
+    import Task from './app/task/task.vue.js'
+
+    var routes = {
+        '/materials': Materials,
+        '/material': Material,
+        '/tasks': Tasks,
+        '/task': Task
+    }
+    const app = createApp({
+        data() {
+            return {
+                currentPath: window.location.hash
+            }
+        },
+        computed: {
+            currentComponent() {
+                var comp = routes[this.currentPath.slice(1) || '/'];
+                return comp;
+            }
+        },
+        mounted() {
+            window.addEventListener('hashchange', () => {
+                this.currentPath = window.location.hash
+            })
+        }
+    });
+
+    app.mount('#app');
+
+</script>
