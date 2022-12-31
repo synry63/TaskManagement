@@ -1,4 +1,4 @@
-﻿
+﻿// control and display button for the submit event. Also display persistance errors.
 export default {
     props: {
         callback: {

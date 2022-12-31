@@ -1,4 +1,5 @@
-﻿import material from '/app/material/material.vue.js'
+﻿// Display and events of list of "Materials" model. One as links, and one as dropdown
+import material from '/app/material/material.vue.js'
 import customDelete from '/app/widget/custom-delete.vue.js'
 export default {
     props: {

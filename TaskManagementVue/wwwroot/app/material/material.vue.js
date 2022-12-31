@@ -1,4 +1,4 @@
-﻿
+﻿// display form of one "Material" model. For edit/create.
 import customInput from '/app/widget/custom-input.vue.js'
 import units from '/app/widget/units.vue.js'
 import customSubmit from '/app/widget/custom-submit.vue.js'

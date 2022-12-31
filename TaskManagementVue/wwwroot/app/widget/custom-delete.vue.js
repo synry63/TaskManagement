@@ -1,4 +1,4 @@
-﻿
+﻿// display link for deleting Models. Also dispaly errors of that event.
 export default {
     props: {
         callback: {

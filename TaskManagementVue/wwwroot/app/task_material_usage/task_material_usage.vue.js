@@ -1,4 +1,4 @@
-﻿
+﻿// Display and events of "TaskMatarielUsage" Models.
 import customInput from '/app/widget/custom-input.vue.js'
 import units from '/app/widget/units.vue.js'
 export default {

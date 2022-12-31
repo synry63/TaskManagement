@@ -1,4 +1,5 @@
-﻿import task from '/app/task/task.vue.js'
+﻿// Display and events of list of "Task" model.
+import task from '/app/task/task.vue.js'
 import customDelete from '/app/widget/custom-delete.vue.js'
 export default {
     props: {

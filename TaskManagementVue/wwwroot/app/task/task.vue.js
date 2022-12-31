@@ -1,4 +1,4 @@
-﻿
+﻿// display form of one "Task" model. For edit/create.
 import customInput from '/app/widget/custom-input.vue.js'
 import materials from '/app/material/materials.vue.js'
 import customSubmit from '/app/widget/custom-submit.vue.js'

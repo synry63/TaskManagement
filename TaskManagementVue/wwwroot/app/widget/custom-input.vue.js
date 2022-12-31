@@ -1,4 +1,4 @@
-﻿
+﻿// display and events on inputs HTML.
 export default {
     props: {
         name: String,

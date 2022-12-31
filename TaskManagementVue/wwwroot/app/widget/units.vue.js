@@ -1,4 +1,4 @@
-﻿
+﻿// display and events of the dropdown for "Unit" Model.
 export default {
     props: {
         unitMeasureId: {
