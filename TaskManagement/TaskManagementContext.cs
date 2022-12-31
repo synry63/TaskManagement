@@ -13,6 +13,8 @@ namespace TaskManagement
 
         public DbSet<M.Material> Materials { get; set; }
         public DbSet<M.Task> Tasks { get; set; }
+        public DbSet<TaskMaterialUsage> TaskMaterialUsage { get; set; }
+        public DbSet<UnitMeasure> UnitMeasure { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -76,8 +78,6 @@ namespace TaskManagement
 
         }
 
-        public DbSet<TaskMaterialUsage> TaskMaterialUsage { get; set; }
 
-        public DbSet<UnitMeasure> UnitMeasure { get; set; }
     }
 }
