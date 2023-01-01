@@ -17,10 +17,6 @@ namespace TaskManagement.Models
         public long UnitOfIssueId { get; set; }
 
 
-        //public virtual ICollection<Task> Tasks { get; set; }
-
-        //public virtual ICollection<TaskMaterialUsage> TaskMaterialUsages { get; set; }
-
 
     }
 }
